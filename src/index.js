@@ -1,31 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 //import reportWebVitals from './reportWebVitals';
-let currentdate=new Date();
-currentdate=currentdate.getHours();
-let gerting='';
-const cssstly={ }
-if(currentdate>=1 &&currentdate<=12)
-{
-gerting='Good Morning';
-cssstly.color='green';
-}
-else if(currentdate>12 && currentdate<=19){
-	gerting='Good Afternoon';
-	cssstly.color='orange';
-}
-else{
-	gerting='Good Night';
-	cssstly.color='black';
-}
+
 ReactDOM.render(
-	<>
-	<div>
-  <h1>Hello Sir,<span style={cssstly}>{gerting}</span></h1>
-  </div>
-  </>,
+	<App/>,
   document.getElementById('root')
 );
 
